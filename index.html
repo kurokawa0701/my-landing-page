@@ -53,9 +53,7 @@
                     </div>
                 </div>
                 <div class="hero__image-wrapper">
-                    <a href="#contact" class="hero__image-link">
-                        <img src="assets/1.png" alt="SES Partner Collaboration" class="hero__image">
-                    </a>
+                    <img src="assets/1.png" alt="SES Partner Collaboration" class="hero__image">
                 </div>
             </div>
         </section>
@@ -93,31 +91,96 @@
             </div>
         </section>
 
-        <!-- SECTION 03: 市場背景 -->
-        <section class="market section-padding bg-light">
-            <div class="container">
-                <h2 class="section-title">SES市場は営業力が成果を左右する時代へ</h2>
-                <div class="market__grid-container">
-                    <div class="market__content">
-                        <div class="market__text">
-                            <p>エンジニア市場の競争激化、パートナー開拓の重要性増加、そして営業人材不足。案件獲得競争はかつてないほど激しくなっています。</p>
-                        </div>
-                            <div class="market__diagram">
-                                <div class="market__step">市場拡大</div>
-                                <div class="market__arrow"><i data-lucide="chevron-down"></i></div>
-                                <div class="market__step">競争激化</div>
-                                <div class="market__arrow"><i data-lucide="chevron-down"></i></div>
-                                <div class="market__step">営業負荷増加</div>
-                                <div class="market__arrow"><i data-lucide="chevron-down"></i></div>
-                                <div class="market__step">利益率低下</div>
-                            </div>
-                    </div>
-                    <div class="market__image-wrapper">
-                        <img src="assets/2.png" alt="Discussion" class="market__image">
-                    </div>
+<!-- SECTION 03: 負のスパイラル -->
+
+<section class="market section-padding bg-light">
+    <div class="container">
+
+```
+    <h2 class="section-title">SES企業が陥りやすい負のスパイラル</h2>
+
+    <div class="market__text" style="max-width:800px;margin:0 auto 60px;text-align:center;">
+        <p>
+            多くのSES企業がこの悪循環に直面しています。
+            営業力不足が情報の停滞を招き、それがさらなる利益の圧迫を生む「負の連鎖」を断ち切る必要があります。
+        </p>
+    </div>
+
+    <div class="spiral-container">
+        <div class="spiral-visual">
+            <div class="spiral-center">
+                <span class="spiral-center__text">負の<br>スパイラル</span>
+                <div class="spiral-center__icon"><i data-lucide="refresh-ccw"></i></div>
+            </div>
+
+            <!-- Spiral Items -->
+            <div class="spiral-node node-1">
+                <div class="node-icon"><i data-lucide="user-minus"></i></div>
+                <div class="node-content">
+                    <span class="node-title">営業担当者不足</span>
                 </div>
             </div>
-        </section>
+            <div class="spiral-node node-2">
+                <div class="node-icon"><i data-lucide="search"></i></div>
+                <div class="node-content">
+                    <span class="node-title">新規開拓不可</span>
+                </div>
+            </div>
+            <div class="spiral-node node-3">
+                <div class="node-icon"><i data-lucide="users"></i></div>
+                <div class="node-content">
+                    <span class="node-title">パートナー減</span>
+                </div>
+            </div>
+            <div class="spiral-node node-4">
+                <div class="node-icon"><i data-lucide="file-x"></i></div>
+                <div class="node-content">
+                    <span class="node-title">情報が集まらない</span>
+                </div>
+            </div>
+            <div class="spiral-node node-5">
+                <div class="node-icon"><i data-lucide="calendar-x"></i></div>
+                <div class="node-content">
+                    <span class="node-title">提案機会の減少</span>
+                </div>
+            </div>
+            <div class="spiral-node node-6">
+                <div class="node-icon"><i data-lucide="clock"></i></div>
+                <div class="node-content">
+                    <span class="node-title">待機・機会損失</span>
+                </div>
+            </div>
+            <div class="spiral-node node-7">
+                <div class="node-icon"><i data-lucide="trending-down"></i></div>
+                <div class="node-content">
+                    <span class="node-title">利益率の低下</span>
+                </div>
+            </div>
+            <div class="spiral-node node-8">
+                <div class="node-icon"><i data-lucide="ban"></i></div>
+                <div class="node-content">
+                    <span class="node-title">投資不可</span>
+                </div>
+            </div>
+
+            <!-- Background Decoration (SVG Arrows) -->
+            <svg class="spiral-arrows" viewBox="0 0 500 500">
+                <circle cx="250" cy="250" r="210" fill="none" stroke="url(#spiral-grad)" stroke-width="2" stroke-dasharray="8 12" />
+                <defs>
+                    <linearGradient id="spiral-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--secondary-color);stop-opacity:0.2" />
+                        <stop offset="100%" style="stop-color:var(--primary-color);stop-opacity:0.2" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
 
         <!-- SECTION 04: 営業の現実 -->
         <section class="reality section-padding">
@@ -255,7 +318,9 @@
                     </div>
                 </div>
                 <div class="commitment__image-wrapper">
-                    <img src="assets/3.png" alt="Trust and Commitment" class="commitment__image">
+                    <a href="#contact" class="commitment__image-link">
+                        <img src="assets/3.png" alt="Trust and Commitment" class="commitment__image">
+                    </a>
                 </div>
             </div>
         </section>
@@ -360,65 +425,45 @@
         <!-- SECTION 10: 導入フロー -->
         <section class="flow section-padding" id="flow">
             <div class="container">
-                <h2 class="section-title">導入までのシンプルなステップ</h2>
+                <h2 class="section-title">導入までのシンプルな4ステップ</h2>
                 <div class="flow__list">
                     <!-- STEP 01 -->
                     <div class="flow__step-wrapper">
                         <div class="flow__step-content">
                             <div class="flow__step-icon"><i data-lucide="user-plus"></i></div>
                             <span class="step-badge">STEP 01</span>
-                            <h3>アカウント発行</h3>
-                            <p class="step-description">最短即日でシステム利用アカウントを発行。すぐにご利用可能です。</p>
+                            <h3>アカウント発行・連携</h3>
+                            <p class="step-description">最短即日でアカウント発行。既存の案件・要員情報を一括連携します。</p>
                         </div>
                     </div>
                     
                     <!-- STEP 02 -->
                     <div class="flow__step-wrapper">
                         <div class="flow__step-content">
-                            <div class="flow__step-icon"><i data-lucide="upload-cloud"></i></div>
+                            <div class="flow__step-icon"><i data-lucide="brain"></i></div>
                             <span class="step-badge">STEP 02</span>
-                            <h3>データのインポート</h3>
-                            <p class="step-description">既存の案件・要員情報を一括アップロード。AIが解析を開始します。</p>
+                            <h3>自動マッチング</h3>
+                            <p class="step-description">AIが膨大なデータから最適な組み合わせを瞬時にピックアップします。</p>
                         </div>
                     </div>
 
                     <!-- STEP 03 -->
                     <div class="flow__step-wrapper">
                         <div class="flow__step-content">
-                            <div class="flow__step-icon"><i data-lucide="brain"></i></div>
+                            <div class="flow__step-icon"><i data-lucide="share-2"></i></div>
                             <span class="step-badge">STEP 03</span>
-                            <h3>自動マッチング実行</h3>
-                            <p class="step-description">AIが膨大なデータから最適な組み合わせを瞬時にピックアップします。</p>
+                            <h3>リアルタイム共有</h3>
+                            <p class="step-description">マッチング結果をパートナー企業へ即座に共有。提案速度を最大化します。</p>
                         </div>
                     </div>
 
                     <!-- STEP 04 -->
                     <div class="flow__step-wrapper">
                         <div class="flow__step-content">
-                            <div class="flow__step-icon"><i data-lucide="share-2"></i></div>
-                            <span class="step-badge">STEP 04</span>
-                            <h3>リアルタイム共有</h3>
-                            <p class="step-description">マッチング結果をパートナー企業へ即座に共有。提案速度を最大化します。</p>
-                        </div>
-                    </div>
-
-                    <!-- STEP 05 -->
-                    <div class="flow__step-wrapper">
-                        <div class="flow__step-content">
-                            <div class="flow__step-icon"><i data-lucide="clipboard-list"></i></div>
-                            <span class="step-badge">STEP 05</span>
-                            <h3>提案・商談の管理</h3>
-                            <p class="step-description">進捗状況をプラットフォーム上で一元管理。成約までの漏れを防ぎます。</p>
-                        </div>
-                    </div>
-
-                    <!-- STEP 06 -->
-                    <div class="flow__step-wrapper highlight">
-                        <div class="flow__step-content">
                             <div class="flow__step-icon"><i data-lucide="bar-chart-3"></i></div>
-                            <span class="step-badge">STEP 06</span>
-                            <h3>データ分析・最適化</h3>
-                            <p class="step-description">成約データを分析し、マッチング精度をさらに向上させ続けます。</p>
+                            <span class="step-badge">STEP 04</span>
+                            <h3>商談管理・最適化</h3>
+                            <p class="step-description">進捗を一元管理し、成約データを分析してマッチング精度を向上させます。</p>
                         </div>
                     </div>
                 </div>
