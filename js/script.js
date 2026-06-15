@@ -60,9 +60,52 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            header.classList.add('is-scrolled');
         } else {
-            header.style.boxShadow = 'none';
+            header.classList.remove('is-scrolled');
+        }
+    });
+
+    // Modal Logic
+    const modal = document.getElementById('contact-modal');
+    const modalClose = document.getElementById('modal-close');
+    const contactLinks = document.querySelectorAll('a[href="#contact"]');
+    const footerContactLink = document.getElementById('footer-contact');
+
+    const openModal = (e) => {
+        if (e) e.preventDefault();
+        modal.classList.add('is-active');
+        document.body.classList.add('modal-open');
+    };
+
+    const closeModal = () => {
+        modal.classList.remove('is-active');
+        document.body.classList.remove('modal-open');
+    };
+
+    contactLinks.forEach(link => {
+        link.addEventListener('click', openModal);
+    });
+
+    if (footerContactLink) {
+        footerContactLink.addEventListener('click', openModal);
+    }
+
+    if (modalClose) {
+        modalClose.addEventListener('click', closeModal);
+    }
+
+    // Close on outside click
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+            closeModal();
         }
     });
 });
