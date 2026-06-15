@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <!-- SECTION 01: ファーストビュー -->
+        <!-- 01: ファーストビュー (Hook) -->
         <section class="hero" id="home">
             <div class="container hero__grid-container">
                 <div class="hero__content">
@@ -58,7 +58,7 @@
             </div>
         </section>
 
-        <!-- SECTION 02: 課題提起 -->
+        <!-- 02: 課題提起 (Problem) -->
         <section class="problem section-padding">
             <div class="container">
                 <h2 class="section-title">SES営業でこんな課題はありませんか？</h2>
@@ -91,104 +91,12 @@
             </div>
         </section>
 
-<!-- SECTION 03: 負のスパイラル -->
-
-<section class="market section-padding bg-light">
-    <div class="container">
-
-```
-    <h2 class="section-title">SES企業が陥りやすい負のスパイラル</h2>
-
-    <div class="market__text" style="max-width:800px;margin:0 auto 60px;text-align:center;">
-        <p>
-            多くのSES企業がこの悪循環に直面しています。
-            営業力不足が情報の停滞を招き、それがさらなる利益の圧迫を生む「負の連鎖」を断ち切る必要があります。
-        </p>
-    </div>
-
-    <div class="spiral-container">
-        <div class="spiral-visual">
-            <div class="spiral-center">
-                <span class="spiral-center__text">負の<br>スパイラル</span>
-                <div class="spiral-center__icon"><i data-lucide="refresh-ccw"></i></div>
-            </div>
-
-            <!-- Spiral Items -->
-            <div class="spiral-node node-1">
-                <div class="node-icon"><i data-lucide="user-minus"></i></div>
-                <div class="node-content">
-                    <span class="node-title">営業担当者不足</span>
-                </div>
-            </div>
-            <div class="spiral-node node-2">
-                <div class="node-icon"><i data-lucide="search"></i></div>
-                <div class="node-content">
-                    <span class="node-title">新規開拓不可</span>
-                </div>
-            </div>
-            <div class="spiral-node node-3">
-                <div class="node-icon"><i data-lucide="users"></i></div>
-                <div class="node-content">
-                    <span class="node-title">パートナー減</span>
-                </div>
-            </div>
-            <div class="spiral-node node-4">
-                <div class="node-icon"><i data-lucide="file-x"></i></div>
-                <div class="node-content">
-                    <span class="node-title">情報が集まらない</span>
-                </div>
-            </div>
-            <div class="spiral-node node-5">
-                <div class="node-icon"><i data-lucide="calendar-x"></i></div>
-                <div class="node-content">
-                    <span class="node-title">提案機会の減少</span>
-                </div>
-            </div>
-            <div class="spiral-node node-6">
-                <div class="node-icon"><i data-lucide="clock"></i></div>
-                <div class="node-content">
-                    <span class="node-title">待機・機会損失</span>
-                </div>
-            </div>
-            <div class="spiral-node node-7">
-                <div class="node-icon"><i data-lucide="trending-down"></i></div>
-                <div class="node-content">
-                    <span class="node-title">利益率の低下</span>
-                </div>
-            </div>
-            <div class="spiral-node node-8">
-                <div class="node-icon"><i data-lucide="ban"></i></div>
-                <div class="node-content">
-                    <span class="node-title">投資不可</span>
-                </div>
-            </div>
-
-            <!-- Background Decoration (SVG Arrows) -->
-            <svg class="spiral-arrows" viewBox="0 0 500 500">
-                <circle cx="250" cy="250" r="210" fill="none" stroke="url(#spiral-grad)" stroke-width="2" stroke-dasharray="8 12" />
-                <defs>
-                    <linearGradient id="spiral-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:var(--secondary-color);stop-opacity:0.2" />
-                        <stop offset="100%" style="stop-color:var(--primary-color);stop-opacity:0.2" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-    </div>
-
-</div>
-```
-
-</section>
-
-
-        <!-- SECTION 04: 営業の現実 -->
-        <section class="reality section-padding">
+        <!-- 03: 営業の現実 (Agitation) -->
+        <section class="reality section-padding bg-light">
             <div class="container">
-                <h2 class="section-title">営業担当者は本来の営業活動に集中できていません</h2>
+                <h2 class="section-title">あなたの会社の優秀な営業が、<br>事務作業に埋もれていませんか？</h2>
                 <div class="reality__grid">
                     <div class="reality__chart">
-                        <!-- CSSで擬似的なグラフを作成予定 -->
                         <div class="chart-container">
                             <div class="chart-pie"></div>
                             <div class="chart-legend">
@@ -210,11 +118,48 @@
             </div>
         </section>
 
-        <!-- SECTION 05: 比較 -->
-        <section class="comparison section-padding" id="comparison">
+        <!-- 04: 負のスパイラル (Crisis) -->
+        <section class="market section-padding">
             <div class="container">
-                <h2 class="section-title">営業担当を採用するよりも低リスク</h2>
-                
+                <h2 class="section-title">SES企業が陥りやすい負のスパイラル</h2>
+                <div class="market__text" style="max-width:800px;margin:0 auto 60px;text-align:center;">
+                    <p>
+                        多くのSES企業がこの悪循環に直面しています。
+                        営業力不足が情報の停滞を招き、それがさらなる利益の圧迫を生む「負の連鎖」を断ち切る必要があります。
+                    </p>
+                </div>
+                <div class="spiral-container">
+                    <div class="spiral-visual">
+                        <div class="spiral-center">
+                            <span class="spiral-center__text">負の<br>スパイラル</span>
+                            <div class="spiral-center__icon"><i data-lucide="refresh-ccw"></i></div>
+                        </div>
+                        <div class="spiral-node node-1"><div class="node-icon"><i data-lucide="user-minus"></i></div><div class="node-content"><span class="node-title">営業担当者不足</span></div></div>
+                        <div class="spiral-node node-2"><div class="node-icon"><i data-lucide="search"></i></div><div class="node-content"><span class="node-title">新規開拓不可</span></div></div>
+                        <div class="spiral-node node-3"><div class="node-icon"><i data-lucide="users"></i></div><div class="node-content"><span class="node-title">パートナー減</span></div></div>
+                        <div class="spiral-node node-4"><div class="node-icon"><i data-lucide="file-x"></i></div><div class="node-content"><span class="node-title">情報が集まらない</span></div></div>
+                        <div class="spiral-node node-5"><div class="node-icon"><i data-lucide="calendar-x"></i></div><div class="node-content"><span class="node-title">提案機会の減少</span></div></div>
+                        <div class="spiral-node node-6"><div class="node-icon"><i data-lucide="clock"></i></div><div class="node-content"><span class="node-title">待機・機会損失</span></div></div>
+                        <div class="spiral-node node-7"><div class="node-icon"><i data-lucide="trending-down"></i></div><div class="node-content"><span class="node-title">利益率の低下</span></div></div>
+                        <div class="spiral-node node-8"><div class="node-icon"><i data-lucide="ban"></i></div><div class="node-content"><span class="node-title">投資不可</span></div></div>
+                        <!-- Background Decoration (SVG Arrows) -->
+                        <svg class="spiral-arrows" viewBox="0 0 600 600">
+                            <circle cx="300" cy="300" r="210" fill="none" stroke="url(#spiral-grad)" stroke-width="2" stroke-dasharray="10 15" />
+                            <defs>
+                                <linearGradient id="spiral-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:var(--secondary-color);stop-opacity:0.3" />
+                                    <stop offset="100%" style="stop-color:var(--primary-color);stop-opacity:0.3" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05: 比較 (Choice) -->
+        <section class="comparison section-padding bg-light" id="comparison">
+            <div class="container">
+                <h2 class="section-title">「採用」が唯一の解決策だと思っていませんか？</h2>
                 <div class="comparison__wrapper">
                     <div class="comparison__table-new">
                         <div class="comparison__row comparison__header">
@@ -222,60 +167,12 @@
                             <div class="comparison__cell target">営業担当1名採用</div>
                             <div class="comparison__cell partner">SES Sales Partner</div>
                         </div>
-                        
-                        <div class="comparison__row">
-                            <div class="comparison__cell label">月額コスト</div>
-                            <div class="comparison__cell target">
-                                <span class="price-old">30万円〜</span>
-                                <small>+ 社会保険料等</small>
-                            </div>
-                            <div class="comparison__cell partner highlight">
-                                <span class="price-new">30万円</span>
-                                <small>固定コストのみ</small>
-                            </div>
-                        </div>
-
-                        <div class="comparison__row">
-                            <div class="comparison__cell label">初期費用</div>
-                            <div class="comparison__cell target">
-                                <span class="risk-text">採用費 (数十万〜)</span>
-                            </div>
-                            <div class="comparison__cell partner highlight">
-                                <span class="safe-text">0円</span>
-                            </div>
-                        </div>
-
-                        <div class="comparison__row">
-                            <div class="comparison__cell label">教育・期間</div>
-                            <div class="comparison__cell target">
-                                <span class="risk-text">教育期間 (3ヶ月〜)</span>
-                            </div>
-                            <div class="comparison__cell partner highlight">
-                                <span class="safe-text">即戦力・即日開始</span>
-                            </div>
-                        </div>
-
-                        <div class="comparison__row">
-                            <div class="comparison__cell label">退職リスク</div>
-                            <div class="comparison__cell target">
-                                <span class="risk-text">常にあり</span>
-                            </div>
-                            <div class="comparison__cell partner highlight">
-                                <span class="safe-text">なし (サービス継続)</span>
-                            </div>
-                        </div>
-
-                        <div class="comparison__row">
-                            <div class="comparison__cell label">成果の安定性</div>
-                            <div class="comparison__cell target">
-                                <span class="risk-text">個人に依存する</span>
-                            </div>
-                            <div class="comparison__cell partner highlight">
-                                <span class="safe-text">ノウハウに基づき安定</span>
-                            </div>
-                        </div>
+                        <div class="comparison__row"><div class="comparison__cell label">月額コスト</div><div class="comparison__cell target"><span class="price-old">30万円〜</span><small>+ 社会保険料等</small></div><div class="comparison__cell partner highlight"><span class="price-new">30万円</span><small>固定コストのみ</small></div></div>
+                        <div class="comparison__row"><div class="comparison__cell label">初期費用</div><div class="comparison__cell target"><span class="risk-text">採用費 (数十万〜)</span></div><div class="comparison__cell partner highlight"><span class="safe-text">0円</span></div></div>
+                        <div class="comparison__row"><div class="comparison__cell label">教育・期間</div><div class="comparison__cell target"><span class="risk-text">教育期間 (3ヶ月〜)</span></div><div class="comparison__cell partner highlight"><span class="safe-text">即戦力・即日開始</span></div></div>
+                        <div class="comparison__row"><div class="comparison__cell label">退職リスク</div><div class="comparison__cell target"><span class="risk-text">常にあり</span></div><div class="comparison__cell partner highlight"><span class="safe-text">なし (サービス継続)</span></div></div>
+                        <div class="comparison__row"><div class="comparison__cell label">成果の安定性</div><div class="comparison__cell target"><span class="risk-text">個人に依存する</span></div><div class="comparison__cell partner highlight"><span class="safe-text">ノウハウに基づき安定</span></div></div>
                     </div>
-
                     <div class="comparison__summary">
                         <div class="comparison__summary-item">
                             <div class="summary-icon"><i data-lucide="trending-down"></i></div>
@@ -290,13 +187,12 @@
             </div>
         </section>
 
-        <!-- SECTION 05-2: 初月0円＆コミットメント -->
-        <section class="commitment section-padding bg-light">
+        <!-- 07: 初月0円＆コミットメント (Reassurance) -->
+        <section class="commitment section-padding">
             <div class="container commitment__grid-container">
                 <div class="commitment__content">
                     <span class="commitment__label">SPECIAL OFFER</span>
                     <h2 class="commitment__title">初月０円</h2>
-                    
                     <div class="commitment__block">
                         <div class="commitment__subtitle-wrapper">
                             <i data-lucide="help-circle" class="commitment__icon"></i>
@@ -306,7 +202,6 @@
                             実際の成果を可視化し、データの裏付けをもってご納得いただいたうえで本格導入いただくため。
                         </p>
                     </div>
-
                     <div class="commitment__block">
                         <div class="commitment__subtitle-wrapper">
                             <i data-lucide="shield-alert" class="commitment__icon"></i>
@@ -325,177 +220,103 @@
             </div>
         </section>
 
-        <!-- SECTION 06: サービス紹介 -->
-        <section class="service section-padding">
+        <!-- 08: サービスの特徴 (Logic) -->
+        <section class="value section-padding" id="features">
             <div class="container">
-                <h2 class="section-title">パートナー開拓に特化した営業支援サービス</h2>
-                <div class="service__grid">
-                    <div class="service__card">
-                        <div class="service__icon"><i data-lucide="users"></i></div>
-                        <h3>①新規パートナー企業開拓</h3>
-                        <ul>
-                            <li>リスト作成</li>
-                            <li>アプローチ実施</li>
-                            <li>関係構築</li>
-                        </ul>
-                    </div>
-                    <div class="service__card">
-                        <div class="service__icon"><i data-lucide="calendar"></i></div>
-                        <h3>②商談機会創出</h3>
-                        <ul>
-                            <li>アポイント獲得</li>
-                            <li>打ち合わせ設定</li>
-                            <li>案件共有促進</li>
-                        </ul>
-                    </div>
-                    <div class="service__card">
-                        <div class="service__icon"><i data-lucide="trending-up"></i></div>
-                        <h3>③営業活動支援</h3>
-                        <ul>
-                            <li>活動報告</li>
-                            <li>進捗管理</li>
-                            <li>KPI管理</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 07: サービスの特徴と成果 -->
-        <section class="value section-padding bg-light" id="features">
-            <div class="container">
-                <h2 class="section-title">SES Sales Partnerが選ばれる理由</h2>
-                <div class="value-grid">
-                    <!-- CARD 1 -->
-                    <div class="value-card">
-                        <div class="value-card__icon"><i data-lucide="target"></i></div>
-                        <h3 class="value-card__title">SES業界特化</h3>
-                        <p class="value-card__feature">業界特有の商習慣を熟知した専門チームが、貴社の強みを的確にパートナー企業へ伝えます。</p>
-                        <div class="value-card__benefit">
-                            <span>EXPECTED RESULT</span>
-                            案件・要員情報のマッチング率が劇的に向上
+                <h2 class="section-title">SES Sales Partnerが選ばれる<br>3つの理由</h2>
+                <div class="value-list">
+                    <!-- REASON 1 -->
+                    <div class="value-item">
+                        <div class="value-item__number">01</div>
+                        <div class="value-item__icon"><i data-lucide="target"></i></div>
+                        <div class="value-item__content">
+                            <h3 class="value-item__title">SES業界の商習慣に特化</h3>
+                            <p class="value-item__description">業界特有の「案件・要員情報」の扱いを熟知した専門チームが対応。貴社の強みを的確にパートナー企業へ伝えます。</p>
+                            <div class="value-item__benefit">
+                                <i data-lucide="trending-up"></i>
+                                <span>情報のマッチング率が劇的に向上</span>
+                            </div>
                         </div>
                     </div>
-                    <!-- CARD 2 -->
-                    <div class="value-card">
-                        <div class="value-card__icon"><i data-lucide="zap"></i></div>
-                        <h3 class="value-card__title">パートナー開拓専門</h3>
-                        <p class="value-card__feature">日々の新規アプローチを代行。貴社の営業担当者は「商談」という最も重要な業務に専念できます。</p>
-                        <div class="value-card__benefit">
-                            <span>EXPECTED RESULT</span>
-                            月間の新規パートナー開拓数が安定
+                    <!-- REASON 2 -->
+                    <div class="value-item">
+                        <div class="value-item__number">02</div>
+                        <div class="value-item__icon"><i data-lucide="zap"></i></div>
+                        <div class="value-item__content">
+                            <h3 class="value-item__title">パートナー開拓の完全自動化</h3>
+                            <p class="value-item__description">日々の新規リスト作成から初回アプローチまでを代行。貴社の営業担当者は「商談」という最も重要な業務に専える専念できます。</p>
+                            <div class="value-item__benefit">
+                                <i data-lucide="trending-up"></i>
+                                <span>月間の新規開拓数が安定し、属人性を排除</span>
+                            </div>
                         </div>
                     </div>
-                    <!-- CARD 3 -->
-                    <div class="value-card">
-                        <div class="value-card__icon"><i data-lucide="trending-up"></i></div>
-                        <h3 class="value-card__title">低コスト・高効率</h3>
-                        <p class="value-card__feature">採用・教育コスト不要。月額30万円の固定費用で、即戦力の営業チームが稼働します。</p>
-                        <div class="value-card__benefit">
-                            <span>EXPECTED RESULT</span>
-                            営業利益率の向上と待機リスクの最小化
+                    <!-- REASON 3 -->
+                    <div class="value-item">
+                        <div class="value-item__number">03</div>
+                        <div class="value-item__icon"><i data-lucide="trending-up"></i></div>
+                        <div class="value-item__content">
+                            <h3 class="value-item__title">低コスト・高効率な運用</h3>
+                            <p class="value-item__description">採用・教育コストは一切不要。月額30万円の固定費用で、即戦力の営業チームが貴社専用に稼働を開始します。</p>
+                            <div class="value-item__benefit">
+                                <i data-lucide="trending-up"></i>
+                                <span>営業利益率の向上と待機リスクの最小化</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 09: 実績 -->
+        <!-- 09: 実績 (Social Proof) -->
         <section class="results section-padding bg-dark text-white" id="results">
             <div class="container">
-                <h2 class="section-title text-white">豊富な営業支援実績</h2>
-                <div class="results__grid">
-                    <div class="result-item">
-                        <span class="result-value">14,000件</span>
-                        <span class="result-label">累計アプローチ数</span>
+                <div class="results__dashboard">
+                    <div class="results__header">
+                        <h2 class="results__title">豊富な営業支援実績</h2>
+                        <p class="results__subtitle">確かなデータが、私たちの信頼の証です。</p>
                     </div>
-                    <div class="result-item">
-                        <span class="result-value">500社</span>
-                        <span class="result-label">初月導入企業</span>
-                    </div>
-                    <div class="result-item">
-                        <span class="result-value">95%</span>
-                        <span class="result-label">営業活動継続率</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- SECTION 10: 導入フロー -->
-        <section class="flow section-padding" id="flow">
-            <div class="container">
-                <h2 class="section-title">導入までのシンプルな4ステップ</h2>
-                <div class="flow__list">
-                    <!-- STEP 01 -->
-                    <div class="flow__step-wrapper">
-                        <div class="flow__step-content">
-                            <div class="flow__step-icon"><i data-lucide="user-plus"></i></div>
-                            <span class="step-badge">STEP 01</span>
-                            <h3>アカウント発行・連携</h3>
-                            <p class="step-description">最短即日でアカウント発行。既存の案件・要員情報を一括連携します。</p>
+                    <div class="results__stats">
+                        <div class="stat-card">
+                            <div class="stat-card__icon"><i data-lucide="mail"></i></div>
+                            <div class="stat-card__info">
+                                <span class="stat-card__value">14,000<small>件</small></span>
+                                <span class="stat-card__label">累計アプローチ数</span>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!-- STEP 02 -->
-                    <div class="flow__step-wrapper">
-                        <div class="flow__step-content">
-                            <div class="flow__step-icon"><i data-lucide="brain"></i></div>
-                            <span class="step-badge">STEP 02</span>
-                            <h3>自動マッチング</h3>
-                            <p class="step-description">AIが膨大なデータから最適な組み合わせを瞬時にピックアップします。</p>
+                        <div class="stat-card">
+                            <div class="stat-card__icon"><i data-lucide="building-2"></i></div>
+                            <div class="stat-card__info">
+                                <span class="stat-card__value">500<small>社</small></span>
+                                <span class="stat-card__label">初月導入企業数</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- STEP 03 -->
-                    <div class="flow__step-wrapper">
-                        <div class="flow__step-content">
-                            <div class="flow__step-icon"><i data-lucide="share-2"></i></div>
-                            <span class="step-badge">STEP 03</span>
-                            <h3>リアルタイム共有</h3>
-                            <p class="step-description">マッチング結果をパートナー企業へ即座に共有。提案速度を最大化します。</p>
-                        </div>
-                    </div>
-
-                    <!-- STEP 04 -->
-                    <div class="flow__step-wrapper">
-                        <div class="flow__step-content">
-                            <div class="flow__step-icon"><i data-lucide="bar-chart-3"></i></div>
-                            <span class="step-badge">STEP 04</span>
-                            <h3>商談管理・最適化</h3>
-                            <p class="step-description">進捗を一元管理し、成約データを分析してマッチング精度を向上させます。</p>
+                        <div class="stat-card">
+                            <div class="stat-card__icon"><i data-lucide="user-check"></i></div>
+                            <div class="stat-card__info">
+                                <span class="stat-card__value">95<small>%</small></span>
+                                <span class="stat-card__label">営業活動継続率</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 11: FAQ -->
+        <!-- 11: FAQ (Conclusion) -->
         <section class="faq section-padding bg-light" id="faq">
             <div class="container">
                 <h2 class="section-title">よくある質問</h2>
                 <div class="faq__list">
-                    <details class="faq__item">
-                        <summary>どのような企業が対象ですか？</summary>
-                        <div class="faq__answer">SES事業を展開する企業様が対象です。</div>
-                    </details>
-                    <details class="faq__item">
-                        <summary>成果はどれくらいで出ますか？</summary>
-                        <div class="faq__answer">初月から確実な面談機会をご提供いたします。</div>
-                    </details>
-                    <details class="faq__item">
-                        <summary>営業担当は必要ですか？</summary>
-                        <div class="faq__answer">面談対応のみご担当いただきます。提案業務は当社が支援します。</div>
-                    </details>
-                    <details class="faq__item">
-                        <summary>初期費用はありますか？</summary>
-                        <div class="faq__answer">初期費用は一切かかりません。料金はサービス契約費用のみとなっております。さらに、現在実施中のキャンペーンにより、初月の月額利用料は無料でご利用いただけます。</div>
-                    </details>
+                    <details class="faq__item"><summary>どのような企業が対象ですか？</summary><div class="faq__answer">SES事業を展開する企業様が対象です。</div></details>
+                    <details class="faq__item"><summary>成果はどれくらいで出ますか？</summary><div class="faq__answer">初月から確実な面談機会をご提供いたします。</div></details>
+                    <details class="faq__item"><summary>営業担当は必要ですか？</summary><div class="faq__answer">面談対応のみご担当いただきます。提案業務は当社が支援します。</div></details>
+                    <details class="faq__item"><summary>初期費用はありますか？</summary><div class="faq__answer">初期費用は一切かかりません。料金はサービス契約費用のみとなっております。さらに、現在実施中のキャンペーンにより、初月の月額利用料は無料でご利用いただけます。</div></details>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 12: 最終CTA -->
+        <!-- 12: 最終CTA -->
         <section class="cta-final section-padding bg-primary text-white">
             <div class="container">
                 <h2 class="cta-final__title">SES営業を、もっとシンプルに。</h2>
@@ -507,54 +328,22 @@
             </div>
         </section>
 
-        <!-- SECTION 13: お問い合わせフォーム（モーダル） -->
+        <!-- 13: お問い合わせフォーム（モーダル） -->
         <div class="modal-overlay" id="contact-modal">
             <div class="modal-container">
-                <button class="modal-close" id="modal-close" aria-label="閉じる">
-                    <i data-lucide="x"></i>
-                </button>
+                <button class="modal-close" id="modal-close" aria-label="閉じる"><i data-lucide="x"></i></button>
                 <div class="modal-content">
                     <h2 class="section-title">無料相談・お問い合わせ</h2>
                     <div class="contact-form__wrapper in-modal">
                         <form action="#" method="POST">
-                            <div class="form-group">
-                                <label class="form-label">貴社名 <span class="required">必須</span></label>
-                                <input type="text" class="form-control" placeholder="株式会社 〇〇" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">お名前 <span class="required">必須</span></label>
-                                <input type="text" class="form-control" placeholder="山田 太郎" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">メールアドレス <span class="required">必須</span></label>
-                                <input type="email" class="form-control" placeholder="example@company.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">電話番号</label>
-                                <input type="tel" class="form-control" placeholder="03-1234-5678">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">お問い合わせ種別 <span class="required">必須</span></label>
-                                <select class="form-control" required>
-                                    <option value="" disabled selected>選択してください</option>
-                                    <option value="consultation">無料相談（オンライン/訪問）</option>
-                                    <option value="request">サービス詳細の説明希望</option>
-                                    <option value="other">その他</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">お問い合わせ内容 <span class="required">必須</span></label>
-                                <textarea class="form-control" rows="5" placeholder="ご相談内容をご記入ください" required></textarea>
-                            </div>
-                            
-                            <div class="form-checkbox">
-                                <input type="checkbox" id="privacy" required>
-                                <label for="privacy"><a href="https://valorise.jp/2" target="_blank" style="text-decoration: underline;">プライバシーポリシー</a>に同意する</label>
-                            </div>
-                            
-                            <div class="form-submit-wrapper">
-                                <button type="submit" class="btn btn--primary btn--submit">送信する</button>
-                            </div>
+                            <div class="form-group"><label class="form-label">貴社名 <span class="required">必須</span></label><input type="text" class="form-control" placeholder="株式会社 〇〇" required></div>
+                            <div class="form-group"><label class="form-label">お名前 <span class="required">必須</span></label><input type="text" class="form-control" placeholder="山田 太郎" required></div>
+                            <div class="form-group"><label class="form-label">メールアドレス <span class="required">必須</span></label><input type="email" class="form-control" placeholder="example@company.com" required></div>
+                            <div class="form-group"><label class="form-label">電話番号</label><input type="tel" class="form-control" placeholder="03-1234-5678"></div>
+                            <div class="form-group"><label class="form-label">お問い合わせ種別 <span class="required">必須</span></label><select class="form-control" required><option value="" disabled selected>選択してください</option><option value="consultation">無料相談（オンライン/訪問）</option><option value="request">サービス詳細の説明希望</option><option value="other">その他</option></select></div>
+                            <div class="form-group"><label class="form-label">お問い合わせ内容 <span class="required">必須</span></label><textarea class="form-control" rows="5" placeholder="ご相談内容をご記入ください" required></textarea></div>
+                            <div class="form-checkbox"><input type="checkbox" id="privacy" required><label for="privacy"><a href="https://valorise.jp/2" target="_blank" style="text-decoration: underline;">プライバシーポリシー</a>に同意する</label></div>
+                            <div class="form-submit-wrapper"><button type="submit" class="btn btn--primary btn--submit">送信する</button></div>
                         </form>
                     </div>
                 </div>
@@ -565,10 +354,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__grid">
-                <div class="footer__brand">
-                    <i data-lucide="layers"></i>
-                    SES Sales Partner
-                </div>
+                <div class="footer__brand"><i data-lucide="layers"></i>SES Sales Partner</div>
                 <nav class="footer__links">
                     <a href="#contact" id="footer-contact">お問い合わせ</a>
                     <a href="https://valorise.jp/2" target="_blank">プライバシーポリシー</a>
@@ -580,9 +366,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
