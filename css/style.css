@@ -218,7 +218,7 @@ ul {
     gap: 32px;
 }
 
-.header__nav a {
+.header__nav a:not(.btn) {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 700;
@@ -230,6 +230,11 @@ ul {
 .header__nav a:not(.btn):hover {
     opacity: 1;
     color: var(--primary-color);
+}
+
+.header__nav .btn {
+    opacity: 1 !important;
+    color: var(--white) !important;
 }
 
 /* Hero Section - Warm Layout with Illustration */
