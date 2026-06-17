@@ -191,14 +191,14 @@
         <!-- 05: 比較 (Choice) -->
         <section class="comparison section-padding" id="comparison">
             <div class="container">
-                <h2 class="section-title">「採用」が唯一の解決策だと思っていませんか？</h2>
+                <h2 class="section-title">「営業の採用」が唯一の解決策だと思っていませんか？</h2>
                 <div class="comparison__scroll-hint"><i data-lucide="arrow-left-right"></i> 左右にスクロールして比較できます</div>
                 <div class="comparison__wrapper">
                     <div class="comparison__table-new">
                         <div class="comparison__row comparison__header">
                             <div class="comparison__cell label">比較項目</div>
-                            <div class="comparison__cell target"><span class="pc-only">営業担当1名</span>採用</div>
-                            <div class="comparison__cell partner"><span class="pc-only">SES Sales </span>Partner</div>
+                            <div class="comparison__cell target">営業の採用</div>
+                            <div class="comparison__cell partner">当社サービス</div>
                         </div>
                         <div class="comparison__row">
                             <div class="comparison__cell label">月額コスト</div>
@@ -214,7 +214,7 @@
                         <div class="comparison__row">
                             <div class="comparison__cell label">初期費用</div>
                             <div class="comparison__cell target">
-                                <span class="risk-text">採用費（数十万〜）</span>
+                                <span class="risk-text">営業の採用費（数十万〜）</span>
                             </div>
                             <div class="comparison__cell partner highlight">
                                 <span class="safe-text">0円</span>
@@ -251,7 +251,7 @@
                     <div class="comparison__summary">
                         <div class="comparison__summary-item">
                             <div class="summary-icon"><i data-lucide="trending-down"></i></div>
-                            <p><strong>採用・教育コストを完全排除。</strong><br>無駄な投資を抑え、即座に営業活動を開始できます。</p>
+                            <p><strong>営業の採用・教育コストを完全排除。</strong><br>無駄な投資を抑え、即座に営業活動を開始できます。</p>
                         </div>
                         <div class="comparison__summary-item">
                             <div class="summary-icon"><i data-lucide="shield-check"></i></div>
@@ -306,7 +306,7 @@
                         <div class="value-item__icon"><i data-lucide="target"></i></div>
                         <div class="value-item__content">
                             <h3 class="value-item__title">SES業界の商習慣に特化</h3>
-                            <p class="value-item__description">業界特有の「案件・要員情報」の扱いを熟知した専門チームが対応。貴社の強みを的なパートナー企業へ伝えます。</p>
+                            <p class="value-item__description">業界特有の「案件・要員情報」の扱いを熟知した専門チームが対応。貴社の強みをパートナー企業へ伝えます。</p>
                             <div class="value-item__benefit">
                                 <i data-lucide="trending-up"></i>
                                 <span>情報のマッチング率が劇的に向上</span>
@@ -465,12 +465,12 @@
                     <h2 class="section-title">無料相談・お問い合わせ</h2>
                     <div class="contact-form__wrapper in-modal">
                         <form action="#" method="POST">
-                            <div class="form-group"><label class="form-label">貴社名 <span class="required">必須</span></label><input type="text" class="form-control" placeholder="株式会社 〇〇" required></div>
-                            <div class="form-group"><label class="form-label">お名前 <span class="required">必須</span></label><input type="text" class="form-control" placeholder="山田 太郎" required></div>
-                            <div class="form-group"><label class="form-label">メールアドレス <span class="required">必須</span></label><input type="email" class="form-control" placeholder="example@company.com" required></div>
-                            <div class="form-group"><label class="form-label">電話番号</label><input type="tel" class="form-control" placeholder="03-1234-5678"></div>
-                            <div class="form-group"><label class="form-label">お問い合わせ種別 <span class="required">必須</span></label><select class="form-control" required><option value="" disabled selected>選択してください</option><option value="consultation">無料相談（オンライン/訪問）</option><option value="request">サービス詳細の説明希望</option><option value="other">その他</option></select></div>
-                            <div class="form-group"><label class="form-label">お問い合わせ内容 <span class="required">必須</span></label><textarea class="form-control" rows="5" placeholder="ご相談内容をご記入ください" required></textarea></div>
+                            <div class="form-group"><label class="form-label">貴社名 <span class="required">必須</span></label><input type="text" name="company" class="form-control" placeholder="株式会社 〇〇" required></div>
+                            <div class="form-group"><label class="form-label">お名前 <span class="required">必須</span></label><input type="text" name="name" class="form-control" placeholder="山田 太郎" required></div>
+                            <div class="form-group"><label class="form-label">メールアドレス <span class="required">必須</span></label><input type="email" name="email" class="form-control" placeholder="example@company.com" required></div>
+                            <div class="form-group"><label class="form-label">電話番号</label><input type="tel" name="phone" class="form-control" placeholder="03-1234-5678"></div>
+                            <div class="form-group"><label class="form-label">お問い合わせ種別 <span class="required">必須</span></label><select name="type" class="form-control" required><option value="" disabled selected>選択してください</option><option value="consultation">無料相談（オンライン/訪問）</option><option value="request">サービス詳細の説明希望</option><option value="other">その他</option></select></div>
+                            <div class="form-group"><label class="form-label">お問い合わせ内容 <span class="required">必須</span></label><textarea name="message" class="form-control" rows="5" placeholder="ご相談内容をご記入ください" required></textarea></div>
                             <div class="form-checkbox"><input type="checkbox" id="privacy" required><label for="privacy"><a href="https://valorise.jp/2" target="_blank" style="text-decoration: underline;">プライバシーポリシー</a>に同意する</label></div>
                             <div class="form-submit-wrapper"><button type="submit" class="btn btn--primary btn--submit">送信する</button></div>
                         </form>
